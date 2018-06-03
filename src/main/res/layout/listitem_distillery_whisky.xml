@@ -1,0 +1,46 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_vertical"
+        android:descendantFocusability="blocksDescendants">
+
+    <com.jncreations.whiskymap.Views.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/button_bar"
+            custom:assetFontFamiliy="RobotoCondensed-Light"
+            android:textSize="22sp"
+            />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_arrow"
+            android:src="@drawable/ic_more"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:contentDescription="@string/button"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_bar"
+            android:src="@drawable/ic_sidebar_bar"
+            android:background="@drawable/button_background_white"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/button_arrow"
+            android:visibility="invisible"
+            android:contentDescription="@string/button"/>
+
+</RelativeLayout>

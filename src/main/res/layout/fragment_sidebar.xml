@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:id="@+id/title_navigation"
+            android:layout_gravity="left|center_vertical"/>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#eeeeee"/>
+
+    <ListView
+            android:id="@+id/sidebar_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"/>
+</LinearLayout>

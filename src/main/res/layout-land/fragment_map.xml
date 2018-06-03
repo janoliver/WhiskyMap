@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+    <com.jncreations.whiskymap.Views.Graphs.TasteGraphView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/graph"
+                custom:axisIndicatorColor="@color/whisky"
+                custom:yLabel="@string/sherrywood"
+                custom:xLowLabel="@string/turfsweet_low"
+                custom:xHighLabel="@string/turfsweet_high"
+                android:layout_margin="10dp"
+                custom:numberWhiskys="0"
+                android:layout_weight="1"/>
+
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/map_choices"
+            android:layout_gravity="top"/>
+
+</LinearLayout>

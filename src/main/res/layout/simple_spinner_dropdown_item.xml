@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.jncreations.whiskymap.Views.CustomCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@android:id/text1"
+                 style="?android:attr/spinnerDropDownItemStyle"
+                 android:singleLine="true"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="20dp"
+                 android:paddingBottom="20dp"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                 android:ellipsize="marquee"
+                 android:textAlignment="inherit"/>

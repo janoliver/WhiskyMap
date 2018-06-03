@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/pref_import_export_title"
+            android:key="pref_key_import_export">
+        <Preference
+                android:key="pref_key_import"
+                android:summary="@string/pref_summary_import"
+                android:title="@string/pref_title_import"/>
+        <Preference
+                android:key="pref_key_export"
+                android:summary="@string/pref_summary_export"
+                android:title="@string/pref_title_export"  />
+    </PreferenceCategory>
+
+</PreferenceScreen>

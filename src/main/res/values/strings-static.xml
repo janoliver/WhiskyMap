@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Whisky Map</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Please do not attempt to translate these! -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_sidebar_graph</item>
+        <item>@drawable/ic_sidebar_list</item>
+        <item>@drawable/ic_sidebar_map</item>
+        <item>@drawable/ic_sidebar_list</item>
+        <item>@drawable/ic_sidebar_bar</item>
+        <item>@drawable/ic_sidebar_settings</item>
+        <item>@drawable/ic_sidebar_info</item>
+        <item>@drawable/ic_sidebar_upgrade</item>
+    </array>
+</resources>

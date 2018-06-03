@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <com.jncreations.whiskymap.Views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title"
+            custom:assetFontFamiliy="Roboto-Black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"/>
+
+    <com.jncreations.whiskymap.Views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            custom:assetFontFamiliy="RobotoCondensed-Light"
+            android:id="@+id/subtitle"
+            android:textColor="@color/text_grey"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"/>
+
+    <com.viewpagerindicator.TitlePageIndicator
+            android:id="@+id/titles"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor="@color/text_grey"
+            android:textSize="14sp"
+            custom:footerColor="@color/whisky"
+            custom:footerLineHeight="1dp"
+            custom:footerIndicatorHeight="3dp"
+            custom:footerIndicatorStyle="underline"
+            custom:selectedColor="@color/whisky"
+            custom:selectedBold="true"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

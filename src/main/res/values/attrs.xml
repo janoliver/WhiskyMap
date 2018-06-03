@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="frontColor" format="color"/>
+    <attr name="lineColor" format="color"/>
+    <declare-styleable name="CustomTextView">
+        <attr name="assetFontFamiliy" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="TasteIndicatorView">
+        <attr name="frontColor"/>
+        <attr name="lineColor"/>
+    </declare-styleable>
+    <declare-styleable name="TasteGraphView">
+        <attr name="axisIndicatorColor"   format="color"/>
+        <attr name="frameLineColor"  format="color"/>
+        <attr name="gridLineColor" format="color"/>
+        <attr name="handleTextColor" format="color"/>
+        <attr name="gridTextColor" format="color"/>
+        <attr name="handleRadius" format="dimension"/>
+        <attr name="handleTextSize" format="dimension"/>
+        <attr name="axesTextSize" format="dimension"/>
+        <attr name="gridTextSize" format="dimension"/>
+        <attr name="gridLineThickness" format="dimension"/>
+        <attr name="frameLineThickness" format="dimension"/>
+        <attr name="indicatorLineThickness" format="dimension"/>
+        <attr name="highlightLineThickness" format="dimension"/>
+        <attr name="labelSeparation" format="dimension"/>
+        <attr name="scrollable" format="boolean"/>
+        <attr name="zoomable" format="boolean"/>
+        <attr name="xLowLabel" format="string"/>
+        <attr name="xHighLabel" format="string"/>
+        <attr name="yLabel" format="string"/>
+        <attr name="numberWhiskys" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="DistilleryMapView">
+        <attr name="map_scrollable" format="boolean"/>
+        <attr name="map_zoomable" format="boolean"/>
+    </declare-styleable>
+</resources>

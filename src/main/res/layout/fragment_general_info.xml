@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/age_string"
+                    android:text="@string/age"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    custom:assetFontFamiliy="RobotoSlab-Bold"
+                    android:id="@+id/whisky_age"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/region_string"
+                    android:text="@string/region"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    custom:assetFontFamiliy="RobotoSlab-Bold"
+                    android:id="@+id/whisky_region"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/country_string"
+                    android:text="@string/country"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    custom:assetFontFamiliy="RobotoSlab-Bold"
+                    android:id="@+id/whisky_country"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/distillery_string"
+                    android:text="@string/distillery"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    custom:assetFontFamiliy="RobotoSlab-Bold"
+                    android:id="@+id/whisky_distillery"
+                    android:layout_toLeftOf="@+id/button_arrow_distillery"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_arrow_distillery"
+                    android:src="@drawable/ic_more"
+                    android:background="@color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="10dp"
+                    android:contentDescription="@string/button"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/vol_string"
+                    android:text="@string/vol"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    custom:assetFontFamiliy="RobotoSlab-Bold"
+                    android:id="@+id/whisky_vol"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <com.jncreations.whiskymap.Views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="14sp"
+                android:id="@+id/bar_notes"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dip"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bar_rating"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone"
+                android:background="@drawable/dashed_border_bottom">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    custom:assetFontFamiliy="RobotoSlab-Bold"
+                    android:id="@+id/bar_rating_text"
+                    android:text="@string/dialog_rating"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bar_rating_bar"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dip"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1"
+                    style="@style/whiskyRatingBar"
+                    android:id="@+id/bar_rating_bar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:isIndicator="true"/>
+        </RelativeLayout>
+
+        <com.jncreations.whiskymap.Views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16sp"
+                custom:assetFontFamiliy="RobotoSlab-Bold"
+                android:id="@+id/bar_owns"
+                android:text="@string/dialog_bar_owns"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dip"/>
+
+        <com.jncreations.whiskymap.Views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16sp"
+                custom:assetFontFamiliy="RobotoSlab-Bold"
+                android:id="@+id/bar_owned"
+                android:text="@string/dialog_bar_owned"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dip"/>
+
+        <com.jncreations.whiskymap.Views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16sp"
+                custom:assetFontFamiliy="RobotoSlab-Bold"
+                android:id="@+id/bar_tasted"
+                android:text="@string/dialog_bar_tasted"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dip"/>
+
+        <com.jncreations.whiskymap.Views.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="16sp"
+                custom:assetFontFamiliy="RobotoSlab-Bold"
+                android:id="@+id/bar_wants"
+                android:text="@string/dialog_bar_wants"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dip"/>
+
+    </LinearLayout>
+</ScrollView>

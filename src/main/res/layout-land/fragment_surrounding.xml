@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="11">
+
+            <com.jncreations.whiskymap.Views.TasteIndicatorDrawable
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/taste_graph"
+                    android:layout_below="@+id/text_above"
+                    custom:frontColor="@color/whisky_trans"
+                    custom:lineColor="@color/text_grey"
+                    android:layout_centerHorizontal="true"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_above"
+                    custom:assetFontFamiliy="RobotoCondensed-Light"
+                    android:text="@string/turf"
+                    android:textColor="@color/text_grey"
+                    android:textSize="13sp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taste_graph"
+                    custom:assetFontFamiliy="RobotoCondensed-Light"
+                    android:text="@string/fruit"
+                    android:textColor="@color/text_grey"
+                    android:textSize="13sp"
+                    android:paddingTop="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/taste_graph"
+                    custom:assetFontFamiliy="RobotoCondensed-Light"
+                    android:text="@string/intensity"
+                    android:textColor="@color/text_grey"
+                    android:textSize="13sp"
+                    android:paddingRight="10dp"
+                    android:layout_centerVertical="true"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/taste_graph"
+                    custom:assetFontFamiliy="RobotoCondensed-Light"
+                    android:text="@string/sherry"
+                    android:textColor="@color/text_grey"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <com.jncreations.whiskymap.Views.Graphs.TasteGraphView
+                android:layout_width="0pt"
+                android:layout_height="wrap_content"
+                android:id="@+id/graph"
+                custom:axisIndicatorColor="@color/whisky"
+                custom:xLowLabel="@string/turfsweet_low"
+                custom:yLabel="@string/sherrywood"
+                custom:xHighLabel="@string/turfsweet_high"
+                custom:numberWhiskys="0"
+                android:layout_margin="10dp"
+                android:layout_weight="9"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00010101</color>
+    <color name="black">#000000</color>
+    <color name="brightbrown">#EFE0B9</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="whisky">#ef4933</color>
+    <color name="whisky_trans">#bbef4933</color>
+    <color name="text_grey">#888888</color>
+    <color name="separator">#cccccc</color>
+</resources>

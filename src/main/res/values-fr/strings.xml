@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="upgrade">Version complète</string>
+
+    <string name="filter_string">Recherche…</string>
+    <string name="hint_drawer">Il faut tirer la marge gauche à droite pour naviguer.</string>
+
+    <!-- Activities, titles -->
+    <string name="flavors">Goûts</string>
+    <string name="map">Distillerie Carte</string>
+    <string name="list">Liste</string>
+    <string name="bar">Mon bar</string>
+    <string name="settings">Paramètres</string>
+    <string name="about">Sur </string>
+    <string name="detail">Détail</string>
+    <string name="add_whisky">Ajouter Whisky</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Goûts</item>
+        <item>Liste de Whisky</item>
+        <item>Distillerie Carte</item>
+        <item>Liste de Distillerie</item>
+        <item>Mon bar</item>
+        <item>Sur</item>
+        <item>Version complète</item>
+    </string-array>
+
+    <!-- Map Choices -->
+    <string-array name="map_display_choices">
+        <item>Tous les whiskeys</item>
+        <item>Mon bar</item>
+    </string-array>
+
+    <!-- Sonstiges -->
+    <string name="distillery">Destillerie</string>
+    <string name="navigation">Navigation</string>
+    <string name="button">Bouton</string>
+    <string name="button_save">Mémoriser</string>
+    <string name="button_cancel">Abandonner</string>
+    <string name="no_entry">Il n’y a pas encore d’inscriptions.</string>
+
+    <!-- DIalogue for the bar adding stuff -->
+    <string name="custom_whisky">Whisky personnalisé.</string>
+    <string name="dialog_bar_name">Le nom du whisky.</string>
+    <string name="dialog_bar_owns">Je possède cette sorte.</string>
+    <string name="dialog_bar_owned">J’ai possédé cette sorte.</string>
+    <string name="dialog_bar_tasted">J’ai goûté cette sorte.</string>
+    <string name="dialog_bar_wants">Je veux avoir cette sorte!</string>
+    <string name="dialog_rating">Mon évaluation:</string>
+    <string name="dialog_bar_notes">Notes</string>
+
+    <!-- detail tabs -->
+    <string name="tab_taste">GOÛT</string>
+    <string name="tab_info">INFOS</string>
+    <string name="tab_surrounding">ALENTOURS</string>
+    <string name="tab_similar">SIMILAIRE</string>
+    <string name="tab_products">PRODUITS</string>
+
+    <!-- whisky properties -->
+    <string name="map_axis_turfsweet">Tourbe/Sucré</string>
+    <string name="map_axis_sherrywood">Sherry/Bois</string>
+    <string name="intensity">Intensité</string>
+    <string name="fruit">Fruit/Sucré</string>
+    <string name="sherry">Sherry/Bois</string>
+    <string name="turf">Tourbeux/Fumé</string>
+    <string name="vol">Teneur en alcool</string>
+    <string name="country">Pays d’origine</string>
+    <string name="region">Région d’origine</string>
+    <string name="age">Âge</string>
+
+    <string name="turfsweet_low">← Sucré</string>
+    <string name="sherrywood">← Sherry/Bois</string>
+    <string name="turfsweet_high">Tourbe →</string>
+
+    <!-- countries -->
+    <string name="scotland">Écosse</string>
+    <string name="ireland">Irlande</string>
+    <string name="england">Angleterre</string>
+    <string name="wales">Wales</string>
+
+    <!-- preferences -->
+    <string name="pref_import_export_title">Importer / exporter des données de l\'utilisateur</string>
+    <string name="pref_summary_import">Vous pouvez importer des données utilisateur enregistrées ici</string>
+    <string name="pref_summary_export">Vous pouvez exporter les données de l\'utilisateur ici</string>
+    <string name="pref_title_import">Importer des données de l\'utilisateur</string>
+    <string name="pref_title_export">Exporter des données de l\'utilisateur</string>
+
+    <!-- messages -->
+    <string name="message_imported">Succès importé les données des utilisateurs!</string>
+    <string name="message_exported">Exporté avec succès des données d\'utilisateur à %1$s!</string>
+    <string name="message_imported_failure">Impossible d\'importer des données de l\'utilisateur!</string>
+    <string name="message_exported_failure">Impossible de données de l\'utilisateur à l\'exportation!</string>
+
+    <!-- about -->
+    <string name="upgrade_sentence"><![CDATA[<p>Il y a 60 sortes de whiskey.  En utilisant la version complète  <span class="whisky">Whisky Map</span> on peut accéder à toutes les sortes: <a href="https://play.google.com/store/apps/details?id=com.jncreations.whiskymap">Play Store</a></p>]]></string>
+    <string name="about_html"><![CDATA[
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style="float:right">
+        <a href="mailto:whiskyflavourmap@gmail.com"><img src="icons/Mail.png" alt="Send us an email!" /></a>
+        &nbsp;
+        <a href="https://www.facebook.com/whiskymapapp"><img src="icons/Facebook.png" alt="Visit us on Facebook!" /></a>
+    </div>
+    <p>Version: {{VERSION}}</p>
+
+    <p>L’application <span class="whisky">Whisky Map Lite</span> est conçue pour aider à choisir le whiskey qui soit approprié tant pour les amateurs que pour ceux qui le consument  occasionnellement. C’est pourquoi on présente la diversité de goûts des différentes sortes d’une manière simplifiée. </p>
+
+    <p>Grâce à la superficie graphique (Whiskey Map) on peut vite reconnaître et choisir les sortes de whiskey qui se ressemblent au niveau de leur goût. En plus, l’application contient des informations sur les distilleries, la teneur en alcool des whiskeys et leur pays d’origine. </p>
+
+<p>En outre, on peut noter dans le caractéristique Mon Bar des sortes qu’on possède déjà ou qu’on veut posséder ou déguster.</p>
+
+    {{UPGRADE}}
+
+    Sortes de whiskey:
+    <ul>
+    <li><span class="whisky">Whisky Map Lite</span>: 60</li>
+    <li><span class="whisky">Whisky Map</span>: plus de 200</li>
+    </ul>
+</body>
+</html>
+    ]]></string>
+</resources>

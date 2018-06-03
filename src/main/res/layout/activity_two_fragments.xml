@@ -1,0 +1,35 @@
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:baselineAligned="false">
+
+        <FrameLayout
+                android:name="com.example.news.ArticleListFragment"
+                android:id="@+id/content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <FrameLayout
+                android:name="com.example.news.ArticleReaderFragment"
+                android:id="@+id/content2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/sidebar_container"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:clickable="true"/>
+
+</android.support.v4.widget.DrawerLayout>

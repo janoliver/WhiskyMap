@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/turf_string"
+                    android:text="@string/turf"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="2.5"
+                    android:stepSize="0.5"
+                    style="@style/whiskyRatingBar"
+                    android:id="@+id/whisky_turf"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/sherry_string"
+                    android:text="@string/sherry"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="2.5"
+                    android:stepSize="0.5"
+                    style="@style/whiskyRatingBar"
+                    android:id="@+id/whisky_sherry"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/fruit_string"
+                    android:text="@string/fruit"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="2.5"
+                    android:stepSize="0.5"
+                    style="@style/whiskyRatingBar"
+                    android:id="@+id/whisky_fruit"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dashed_border_bottom"
+                android:padding="15dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/intensity_string"
+                    android:text="@string/intensity"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="2.5"
+                    android:stepSize="0.5"
+                    style="@style/whiskyRatingBar"
+                    android:id="@+id/whisky_intensity"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

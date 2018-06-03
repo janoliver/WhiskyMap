@@ -1,0 +1,77 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+            android:id="@+id/country_image"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_scotland"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/country"/>
+
+    <com.jncreations.whiskymap.Views.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/country_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/button_bar"
+            custom:assetFontFamiliy="RobotoCondensed-Light"
+            android:textSize="20sp"
+            />
+
+    <com.jncreations.whiskymap.Views.CustomTextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey"
+            android:layout_toRightOf="@+id/country_image"
+            android:layout_below="@+id/title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/button_bar"
+            android:textSize="12sp"/>
+
+    <com.jncreations.whiskymap.Views.CustomTextView
+            android:id="@+id/region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey"
+            android:layout_toRightOf="@+id/country_image"
+            android:layout_below="@+id/subtitle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/button_bar"
+            android:textSize="12sp"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_arrow"
+            android:src="@drawable/ic_more"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:contentDescription="@string/button"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_bar"
+            android:src="@drawable/ic_sidebar_bar"
+            android:background="@drawable/button_background_white"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/button_arrow"
+            android:visibility="invisible"
+            android:contentDescription="@string/button"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/head"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+        <LinearLayout
+                android:id="@+id/names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bottom_line_whisky"
+                android:paddingRight="40dp">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    custom:assetFontFamiliy="Roboto-Black"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="8dp"/>
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    custom:assetFontFamiliy="RobotoCondensed-Light"
+                    android:id="@+id/subtitle"
+                    android:textColor="@color/text_grey"
+                    android:textSize="18sp"
+                    android:paddingLeft="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <com.viewpagerindicator.TitlePageIndicator
+                    android:id="@+id/titles"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/text_grey"
+                    android:textSize="14sp"
+                    custom:footerColor="@color/whisky"
+                    custom:footerLineHeight="1dp"
+                    custom:footerIndicatorHeight="3dp"
+                    custom:footerIndicatorStyle="underline"
+                    custom:selectedColor="@color/whisky"
+                    custom:selectedBold="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

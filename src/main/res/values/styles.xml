@@ -1,0 +1,25 @@
+<resources>
+    <!-- Application theme. -->
+    <style name="WhiskyAppTheme" parent="WhiskyTheme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="actionBarStyle">@style/WhiskyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="WhiskyActionBar"
+           parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/whisky</item>
+        <item name="android:background">@color/whisky</item>
+    </style>
+
+    <style name="whiskyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/whisky_rating_bar</item>
+        <item name="android:minHeight">23dip</item>
+        <item name="android:maxHeight">25dip</item>
+    </style>
+
+    <style name="FastscrollThemedListView" parent="@style/WhiskyAppTheme">
+        <item name="android:textColorPrimary">?android:textColorPrimaryInverse</item>
+    </style>
+</resources>

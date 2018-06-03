@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/RobotoSlab-Regular.ttf");
+}
+
+body {
+    font-family:"Roboto", Verdana;
+    padding:10px;
+    margin:0;
+}
+
+.whisky {
+    color:#ef4933;
+}

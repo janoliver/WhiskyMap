@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="upgrade">Versión completa</string>
+
+    <string name="filter_string">Buscar…</string>
+    <string name="hint_drawer">Para navegar, arrastra el borde izquierdo de la pantalla hacia la derecha.</string>
+
+    <!-- Activities, titles -->
+    <string name="flavors">Sabores</string>
+    <string name="map">Mapa Whisky</string>
+    <string name="list">Lista</string>
+    <string name="bar">Mi Bar</string>
+    <string name="settings">Ajustes</string>
+    <string name="about">Acerca de</string>
+    <string name="detail">Detalles</string>
+    <string name="add_whisky">Añadir el whisky</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Sabores</item>
+        <item>Lista de Whisky</item>
+        <item>Mapa de destilerías</item>
+        <item>Lista de destilerías</item>
+        <item>Mi Bar</item>
+        <item>Acerca de</item>
+        <item>Versión completa</item>
+    </string-array>
+
+    <!-- Map Choices -->
+    <string-array name="map_display_choices">
+        <item>Todos los tipos de whisky</item>
+        <item>Mi Bar</item>
+    </string-array>
+
+    <!-- Sonstiges -->
+    <string name="distillery">Destilería</string>
+    <string name="navigation">Navegación</string>
+    <string name="button">Botón</string>
+    <string name="button_save">Guardar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="no_entry">Vacío</string>
+
+    <!-- DIalogue for the bar adding stuff -->
+    <string name="custom_whisky">Entrada personalizada.</string>
+    <string name="dialog_bar_name">El nombre del whisky.</string>
+    <string name="dialog_bar_owns">Lo tengo.</string>
+    <string name="dialog_bar_owned">Lo tenía.</string>
+    <string name="dialog_bar_tasted">Lo he probado.</string>
+    <string name="dialog_bar_wants">¡Me gustaría tenerlo!</string>
+    <string name="dialog_rating">Mi valoración:</string>
+    <string name="dialog_bar_notes">Notas</string>
+
+    <!-- detail tabs -->
+    <string name="tab_taste">SABOR</string>
+    <string name="tab_info">INFORMACIÓN</string>
+    <string name="tab_surrounding">AMBIENTE</string>
+    <string name="tab_similar">SIMILAR</string>
+    <string name="tab_products">PRODUCTOS</string>
+
+    <!-- whisky properties -->
+    <string name="map_axis_turfsweet">Turba/Dulce</string>
+    <string name="map_axis_sherrywood">Jerez/Madera</string>
+    <string name="intensity">Intensidad</string>
+    <string name="fruit">Afrutado/Dulce</string>
+    <string name="sherry">Jerez/Madera</string>
+    <string name="turf">Turboso/Ahumado</string>
+    <string name="vol">Graduación alcohólica</string>
+    <string name="country">País de origen</string>
+    <string name="region">Región de origen</string>
+    <string name="age">Edad</string>
+
+    <string name="turfsweet_low">← Dulce</string>
+    <string name="sherrywood">← Jerez/Madera</string>
+    <string name="turfsweet_high">Turba →</string>
+
+    <!-- countries -->
+    <string name="scotland">Escocia</string>
+    <string name="ireland">Irlanda</string>
+    <string name="england">Inglaterra</string>
+    <string name="wales">Gales</string>
+
+    <!-- preferences -->
+    <string name="pref_import_export_title">Importar / Exportar datos de usuario</string>
+    <string name="pref_summary_import">Puede importar datos de usuario guardados aquí</string>
+    <string name="pref_summary_export">Puede exportar datos de usuario aquí</string>
+    <string name="pref_title_import">Importar datos de usuario</string>
+    <string name="pref_title_export">Exportar datos de usuario</string>
+
+    <!-- messages -->
+    <string name="message_imported">Con éxito importado datos de usuario!</string>
+    <string name="message_exported">Con éxito exportado los datos del usuario a %1$s!</string>
+    <string name="message_imported_failure">Error al importar datos de usuario!</string>
+    <string name="message_exported_failure">Error al exportar datos de usuario!</string>
+
+
+    <!-- about -->
+    <string name="upgrade_sentence"><![CDATA[<p>Descárgate <span class="whisky">Whisky Map</span> desde <a href="https://play.google.com/store/apps/details?id=com.jncreations.whiskymap">Play Store</a>.</p>]]></string>
+    <string name="about_html"><![CDATA[
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style="float:right">
+        <a href="mailto:whiskyflavourmap@gmail.com"><img src="icons/Mail.png" alt="Send us an email!" /></a>
+        &nbsp;
+        <a href="https://www.facebook.com/whiskymapapp"><img src="icons/Facebook.png" alt="Visit us on Facebook!" /></a>
+    </div>
+    <p>Version: {{VERSION}}</p>
+
+    <p>La aplicación <span class="whisky">Whisky Map Lite</span>
+    pretende ser una guía para escoger el whisky más adecuado y está dirigida a principiantes y a aquellos a los que les gusta disfrutar un whisky de vez en cuando. Por esa razón, se ha simplificado la diversidad de sabores de cada tipo de whisky para esta aplicación.</p>
+
+    <p>La superficie gráfica (Whisky Map) permite a los usuarios encontrar y escoger rápidamente otros tipos de whisky de sabor parecido. Además, incluye información sobre destilerías, graduación alcohólica y origen.</p>
+<p>Además, con la función «Mi bar», los usuarios pueden añadir los tipos de whisky que ya tienen o que les gustaría probar o adquirir.</p>
+    {{UPGRADE}}
+
+    Tipos de whisky incluidos:
+    <ul>
+    <li><span class="whisky">Whisky Map Lite</span>: 60</li>
+    <li><span class="whisky">Whisky Map</span>: más de 200</li>
+    </ul>
+</body>
+</html>
+    ]]></string>
+</resources>

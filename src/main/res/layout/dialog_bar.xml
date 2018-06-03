@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_name"
+                    android:singleLine="true"
+                    android:maxLength="255"
+                    android:textSize="14sp"
+                    android:hint="@string/dialog_bar_name"
+                    android:visibility="gone"/>
+        </RelativeLayout>
+
+        <com.jncreations.whiskymap.Views.CustomCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_bar_owns"
+                android:id="@+id/item_owns"
+                android:checkMark="@drawable/whiskytheme_btn_check_holo_light"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/bottom_line"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        <com.jncreations.whiskymap.Views.CustomCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_bar_owned"
+                android:id="@+id/item_owned"
+                android:checkMark="@drawable/whiskytheme_btn_check_holo_light"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/bottom_line"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        <com.jncreations.whiskymap.Views.CustomCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_bar_tasted"
+                android:id="@+id/item_tasted"
+                android:checkMark="@drawable/whiskytheme_btn_check_holo_light"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/bottom_line"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        <com.jncreations.whiskymap.Views.CustomCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_bar_wants"
+                android:id="@+id/item_wants"
+                android:checkMark="@drawable/whiskytheme_btn_check_holo_light"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/bottom_line"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/bottom_line">
+
+            <com.jncreations.whiskymap.Views.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_rating"
+                    android:id="@+id/item_rating"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1"
+                    style="@style/whiskyRatingBar"
+                    android:id="@+id/rating"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:isIndicator="false"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_notes"
+                    android:singleLine="false"
+                    android:maxLength="255"
+                    android:textSize="14sp"
+                    android:hint="@string/dialog_bar_notes"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

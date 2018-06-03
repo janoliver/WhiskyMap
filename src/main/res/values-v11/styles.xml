@@ -1,0 +1,8 @@
+<resources>
+    <!-- Application theme. -->
+    <style name="WhiskyAppTheme" parent="WhiskyTheme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:actionBarStyle">@style/WhiskyActionBar</item>
+    </style>
+</resources>
